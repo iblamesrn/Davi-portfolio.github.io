@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Davi Yohan</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Davi</a>
+
+        <nav>
+            <a href="#home" class="active"> Home</a>
+            <a href="#sobre" >Sobre Mim</a>
+            <a href="#habilidades" >Habilidades</a>
+            <a href="#portfolio" >Portfólio</a>
+            <a href="#contato" >Contato</a>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="my profile-pic.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Olá, me chamo <span>Davi</span></h1>
+            <h3 class="typing-text">Eu sou um <span></span></h3>
+            <p>E estudante de Desenvolvimento de Sistemas</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/davi-aquino-950053334/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:dl.aquino91@outlook.com" target="_blank"><i class="fa-brands fa-microsoft"></i></a>
+                <a href="https://www.github.com./iblamesrn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="//Wa.me/5579991419185" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/iblamesrn" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#contato" class="btn">Entre em Contato</a>
+        </div>
+    </section>
+
+    <section  id="sobre" class="sobre">
+
+        <div class="sobre-img">
+            <img src="gojo satoru x geto suguru icon.jpeg" alt="">
+        </div>
+
+        <div class="sobre-content">
+
+            <h1>Me chamo Davi, tenho 17 anos e sou estudante de Desenvolvimento de Sistemas.</h1>
+            <p>Aqui estarão alguns de meus projetos pessoais, então espero que gostem</p>
+
+        </div>
+
+    </section>
+
+    <section id="habilidades" class="habilidades">
+
+        <div class="carrossel-container">
+            <button class="seta seta-esquerda" onclick="mudarImagem(-1)">&#10094;</button>
+            <div class="carrossel">
+              <a href="pagina1.html"><img src="Captura de tela 2024-11-12 211336.png" alt="Imagem 1"></a>
+              <a href="pagina2.html"><img src="calc-print.png" alt="Imagem 2"></a>
+              <a href="index.html"><img src="Captura de tela 2024-11-12 212010.png" alt="Imagem 3"></a>
+            </div>
+            <button class="seta seta-direita" onclick="mudarImagem(1)">&#10095;</button>
+          </div>
+
+    </section>
+
+    <section class="portfolio" id="portfolio">
+
+        <div class="portfolio-content">
+
+            <h1>Cursos/Certificados</h1>
+            <p>Desenvolvimento de Sistemas(Senai) <br>
+                Informática Basica(IJCPM) <br>
+                Impressão e modelagem 3D(Senai)
+
+            </p>
+
+        </div>
+
+        <div class="portfolio-content2">
+
+            <h1>Experiências</h1>
+            <p>Grand Prix Senai <br>
+               Grand Prix Senai America Latina </p>
+
+        </div>
+
+    </section>
+
+    <section class="contato" id="contato">
+
+        <h1>Entre em Contato</h1>
+
+        <div class="contato-form">
+
+            <form id="contato-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Mensagem:</label><br>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+
+        </div>
+
+    </section>
+
+   
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
